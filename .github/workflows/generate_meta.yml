@@ -24,3 +24,8 @@ jobs:
       run: pip install -r requirements.txt
     - name: "Generate Data"
       run: python run.py
+      env:
+        META_UPSTREAM_DIR: upstream
+        META_UPSTREAM_URL: https://github.com/Refitted-Team/upstream-meta
+        META_LAUNCHER_DIR: launcher
+        META_LAUNCHER_URL: https://github.com/Refitted-Team/launcher-meta

@@ -3,12 +3,6 @@ from datetime import date
 
 currentDate = date.today()
 
-# TODO: Remove, this is temp
-os.environ["META_UPSTREAM_DIR"] = "upstream"
-os.environ["META_UPSTREAM_URL"] = "https://github.com/Novampr/upstream-meta"
-os.environ["META_LAUNCHER_DIR"] = "launcher"
-os.environ["META_LAUNCHER_URL"] = "https://github.com/Novampr/launcher-meta"
-
 def init_repo(directory, url, msg):
     if os.path.exists(directory):
         return True
